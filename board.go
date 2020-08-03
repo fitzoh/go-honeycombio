@@ -34,7 +34,10 @@ type Board struct {
 	Name string `json:"name"`
 	// The description of the board
 	Description string `json:"description,omitempty"`
-	// How the board should be displayed in the UI, either "list" (the default) or "visual"
+	// How the board should be displayed in the UI, either "
+    
+    
+    " (the default) or "visual"
 	Style BoardStyle `json:"style,omitempty"`
 	// A list of queries to display on the board in order of appearance
 	Queries []BoardQuery `json:"queries"`
@@ -45,8 +48,8 @@ type BoardStyle string
 
 // List of available board styles.
 const (
-	BoardStyleList   BoardStyle = "visual"
-	BoardStyleVisual BoardStyle = "list"
+	BoardStyleList   BoardStyle = "list"
+	BoardStyleVisual BoardStyle = "visual"
 )
 
 type BoardQuery struct {
